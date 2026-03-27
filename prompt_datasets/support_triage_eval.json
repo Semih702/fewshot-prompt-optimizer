@@ -1,0 +1,102 @@
+{
+  "task_name": "support_request_triage_eval",
+  "description": "Held-out evaluation cases for comparing prompt variants.",
+  "examples": [
+    {
+      "input": "We were billed twice after upgrading the plan.",
+      "output": {
+        "category": "billing",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Sifremi yeniledim ama hala giris yapamiyorum.",
+      "output": {
+        "category": "account_access",
+        "priority": "high",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "The mobile app crashes whenever I open notifications.",
+      "output": {
+        "category": "bug",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Destek taleplerine klavye kisayollari ekleyin.",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "Please rename the company name on upcoming invoices.",
+      "output": {
+        "category": "billing",
+        "priority": "low",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Please transfer workspace ownership to our new admin.",
+      "output": {
+        "category": "account_access",
+        "priority": "medium",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Search results are in the wrong order on the dashboard.",
+      "output": {
+        "category": "bug",
+        "priority": "medium",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Add a PowerPoint export option for reports.",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Can you update the tax number on future invoices?",
+      "output": {
+        "category": "billing",
+        "priority": "low",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Yeni yoneticimize workspace sahipligini devretmek istiyoruz.",
+      "output": {
+        "category": "account_access",
+        "priority": "medium",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "CSV import puts values in the wrong columns.",
+      "output": {
+        "category": "bug",
+        "priority": "medium",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Please add Slack channel filters for alert routing.",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en"
+      }
+    }
+  ]
+}

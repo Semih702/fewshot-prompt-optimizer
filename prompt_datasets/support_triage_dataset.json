@@ -1,0 +1,198 @@
+{
+  "task_name": "support_request_triage",
+  "description": "A larger dataset of support requests mapped to normalized JSON labels.",
+  "examples": [
+    {
+      "input": "I was charged twice for my March invoice.",
+      "output": {
+        "category": "billing",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Can you send a refund for the duplicate payment?",
+      "output": {
+        "category": "billing",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Kartımdan yenileme ucreti cekilmedi, manuel odeyemiyorum.",
+      "output": {
+        "category": "billing",
+        "priority": "medium",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "Need to change the credit card before renewal tomorrow.",
+      "output": {
+        "category": "billing",
+        "priority": "medium",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Faturadaki sirket adi yanlis gorunuyor.",
+      "output": {
+        "category": "billing",
+        "priority": "low",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "The export button stopped working after the last update.",
+      "output": {
+        "category": "bug",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Dashboard freezes every time I open reports.",
+      "output": {
+        "category": "bug",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Mobil uygulama acilir acilmaz kapaniyor.",
+      "output": {
+        "category": "bug",
+        "priority": "high",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "CSV import creates duplicate rows on Firefox.",
+      "output": {
+        "category": "bug",
+        "priority": "medium",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Arama filtresi sonuclari yanlis siraliyor.",
+      "output": {
+        "category": "bug",
+        "priority": "medium",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "Password reset emails never arrive.",
+      "output": {
+        "category": "account_access",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Two-factor code is accepted and then I get bounced back to login.",
+      "output": {
+        "category": "account_access",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Şifre sıfırlama maili bana gelmiyor.",
+      "output": {
+        "category": "account_access",
+        "priority": "high",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "Eski yoneticimiz ayrildi, hesabin sahipligini devretmemiz gerekiyor.",
+      "output": {
+        "category": "account_access",
+        "priority": "medium",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "I need to unlock an analyst account before today's demo.",
+      "output": {
+        "category": "account_access",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Can you add dark mode to the dashboard?",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Slack bildirimlerinde kanal bazli filtre istiyoruz.",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "Please support exporting directly to Google Sheets.",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Takim bazli onay akisi sablonu eklenebilir mi?",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "Would love keyboard shortcuts in the editor.",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en"
+      }
+    },
+    {
+      "input": "The legal entity name on our invoices needs an update.",
+      "output": {
+        "category": "billing",
+        "priority": "low",
+        "language": "en"
+      }
+    },
+    {
+      "input": "We need to move workspace ownership to a new admin.",
+      "output": {
+        "category": "account_access",
+        "priority": "medium",
+        "language": "en"
+      }
+    },
+    {
+      "input": "The CSV export columns come out in the wrong order.",
+      "output": {
+        "category": "bug",
+        "priority": "medium",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Please add Slack channel filters for alerts.",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en"
+      }
+    }
+  ]
+}

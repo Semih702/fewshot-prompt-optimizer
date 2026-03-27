@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-from-examples"
+version = "0.1.0"
+description = "Build few-shot prompts from a growing dataset of examples."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.109.1",
+    "pydantic>=2.11.0",
+    "python-dotenv>=1.1.0",
+    "typer>=0.16.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.10.0",
+    "mypy>=1.13.0",
+    "pytest>=8.4.0",
+    "ruff>=0.11.0",
+]
+
+[project.scripts]
+prompt-from-examples = "prompt_from_examples.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "N", "RUF", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_configs = true
+mypy_path = "src"
+packages = ["prompt_from_examples"]

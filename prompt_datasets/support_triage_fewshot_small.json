@@ -1,0 +1,46 @@
+{
+  "task_name": "support_request_triage",
+  "description": "Normalize short support requests into JSON labels for category, priority, and language.",
+  "examples": [
+    {
+      "input": "I was charged twice for my March invoice.",
+      "output": {
+        "category": "billing",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Şifre sıfırlama maili bana gelmiyor.",
+      "output": {
+        "category": "account_access",
+        "priority": "high",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "The export button stopped working after the last update.",
+      "output": {
+        "category": "bug",
+        "priority": "high",
+        "language": "en"
+      }
+    },
+    {
+      "input": "Karanlık mod ekleyebilir misiniz?",
+      "output": {
+        "category": "feature_request",
+        "priority": "low",
+        "language": "tr"
+      }
+    },
+    {
+      "input": "Need to change the credit card before renewal tomorrow.",
+      "output": {
+        "category": "billing",
+        "priority": "medium",
+        "language": "en"
+      }
+    }
+  ]
+}
